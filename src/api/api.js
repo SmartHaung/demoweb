@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base = 'http://localhost:8080';
+let base = 'http://huangwenbin.xin/:8080';
 
 export const jsonpRequest = (url, object, params, alertMsg) => {
     if (!alertMsg) {
