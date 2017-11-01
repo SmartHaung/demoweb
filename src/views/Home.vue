@@ -1,6 +1,6 @@
 <template>
 	<el-row class="container">
-		<el-col :span="24" class="header" v-show="!this.fullScreen">
+		<el-col :span="24" class="header">
 			<el-col :span="10" class="logo" :class="logo-width">
 				{{sysName}}
 			</el-col>
@@ -14,7 +14,7 @@
 			</el-col>
 		</el-col>
 		<el-col :span="24" class="main">
-			<aside :class="menu-expanded" v-show="!this.fullScreen">
+			<aside :class="menu-expanded">
 				<!--导航菜单-->
 				<el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose" @select="handleselect" unique-opened router>
 					<template v-for="(item,index) in $router.options.routes" v-if="!item.hidden">
